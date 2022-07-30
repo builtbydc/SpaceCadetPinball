@@ -77,9 +77,15 @@ This project is available as Flatpak on [Flathub](https://flathub.org/apps/detai
 * **Homebrew**: Install the `SDL2`, `SDL2_mixer` homebrew packages.
 * **MacPorts**: Install the `libSDL2`, `libSDL2_mixer` macports packages.
 
-Compile with CMake. Ensure that `CMAKE_OSX_ARCHITECTURES` variable is set for either `x86_64` Apple Intel or `arm64` for Apple Silicon.
+You'll also need `cmake` installed. If you run into issues, ensure that CMAKE_OSX_ARCHITECTURES variable is set for either x86_64 Apple Intel or arm64 for Apple Silicon.
 
-Tested with: macOS Big Sur (Intel) with Xcode 13 & macOS Montery Beta (Apple Silicon) with Xcode 13.
+Navigate to the folder that you'd like the game files to live (in a terminal), then run the following two commands.
+
+`git clone https://github.com/builtbydc/SpaceCadetPinball`
+
+`cd SpaceCadetPinball`
+
+Next, run: `./install.sh`. This will install everything required, and it will start up the game. Later, you may right click on the file named `SpaceCadetPinball` in the `SpaceCadetPinball/bin/` folder, and select "Make Alias". Name this shortcut anything you'd like, and place it in a convenient location. This will be the way you will launch the game in the future.
 
 ## Plans
 
